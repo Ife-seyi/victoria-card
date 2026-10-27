@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Portfolio — Victoria Archibong</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;1,9..144,400&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="wrap">
+
+  <div class="hero" style="padding-top:44px;">
+    <h1 class="name" style="font-size:23px; opacity:1; animation:none;">Portfolio</h1>
+    <div class="role" style="opacity:1; animation:none; height:auto;">
+      <span class="role-text" style="position:static; opacity:1; animation:none;">Same three projects, two ways to read them</span>
+    </div>
+  </div>
+
+  <div class="track-toggle">
+    <button class="track-btn active" data-track="ea">Executive Assistant</button>
+    <button class="track-btn" data-track="dev">Software Developer</button>
+  </div>
+
+  <!-- EXECUTIVE ASSISTANT TRACK -->
+  <div class="track-panel active" id="track-ea">
+    <p class="track-intro">Work built around real operational problems — the kind that come from actually running the room, not just coding from a spec.</p>
+    <div class="grid">
+
+      <a class="work" href="https://llcl-leadership-assessment.vercel.app/" target="_blank" rel="noopener">
+        <div class="work-preview">
+          <img src="https://s.wordpress.com/mshots/v1/https%3A%2F%2Fllcl-leadership-assessment.vercel.app%2F?w=640&h=400" alt="LLCL Leadership Self-Assessment preview" loading="lazy">
+          <span class="work-cta">View project ↗</span>
+        </div>
+        <div class="work-info">
+          <div class="work-title">LLCL Leadership Self-Assessment</div>
+          <div class="work-desc">Built and shipped the lead-capture page for my firm's free assessment e-book — took it from idea to a live page driving real sign-ups.</div>
+        </div>
+      </a>
+
+      <a class="work" href="https://executive-ops-chi.vercel.app/" target="_blank" rel="noopener">
+        <div class="work-preview">
+          <img src="https://s.wordpress.com/mshots/v1/https%3A%2F%2Fexecutive-ops-chi.vercel.app%2F?w=640&h=400" alt="Executive Ops preview" loading="lazy">
+          <span class="work-cta">View project ↗</span>
+        </div>
+        <div class="work-info">
+          <div class="work-title">Executive Ops</div>
+          <div class="work-desc">The meeting-prep system I wished I had as an EA — agendas, attendee context, and follow-ups in one place instead of scattered across email and sticky notes.</div>
+        </div>
+      </a>
+
+      <a class="work" href="https://ai-action-items.vercel.app/" target="_blank" rel="noopener">
+        <div class="work-preview">
+          <img src="https://s.wordpress.com/mshots/v1/https%3A%2F%2Fai-action-items.vercel.app%2F?w=640&h=400" alt="Notes to Action preview" loading="lazy">
+          <span class="work-cta">View project ↗</span>
+        </div>
+        <div class="work-info">
+          <div class="work-title">Notes → Action</div>
+          <div class="work-desc">Turns messy meeting notes into tracked action items automatically — because commitments made out loud shouldn't quietly disappear.</div>
+        </div>
+      </a>
+
+    </div>
+  </div>
+
+  <!-- SOFTWARE DEVELOPER TRACK -->
+  <div class="track-panel" id="track-dev">
+    <p class="track-intro">The same three projects, read for how they're built — front-end architecture now, full MERN stack as each one grows.</p>
+    <div class="grid">
+
+      <a class="work" href="https://llcl-leadership-assessment.vercel.app/" target="_blank" rel="noopener">
+        <div class="work-preview">
+          <img src="https://s.wordpress.com/mshots/v1/https%3A%2F%2Fllcl-leadership-assessment.vercel.app%2F?w=640&h=400" alt="LLCL Leadership Self-Assessment preview" loading="lazy">
+          <span class="work-cta">View project ↗</span>
+        </div>
+        <div class="work-info">
+          <div class="work-title">LLCL Leadership Self-Assessment</div>
+          <div class="work-desc">Responsive landing page, built and deployed solo — lead-capture flow, hosted on Vercel with a clean Lighthouse score in mind.</div>
+        </div>
+      </a>
+
+      <a class="work" href="https://executive-ops-chi.vercel.app/" target="_blank" rel="noopener">
+        <div class="work-preview">
+          <img src="https://s.wordpress.com/mshots/v1/https%3A%2F%2Fexecutive-ops-chi.vercel.app%2F?w=640&h=400" alt="Executive Ops preview" loading="lazy">
+          <span class="work-cta">View project ↗</span>
+        </div>
+        <div class="work-info">
+          <div class="work-title">Executive Ops</div>
+          <div class="work-desc">Vanilla JS, component-style rendering, state persisted client-side — architected so the data model drops straight into a Node/Express/MongoDB backend.</div>
+        </div>
+      </a>
+
+      <a class="work" href="https://ai-action-items.vercel.app/" target="_blank" rel="noopener">
+        <div class="work-preview">
+          <img src="https://s.wordpress.com/mshots/v1/https%3A%2F%2Fai-action-items.vercel.app%2F?w=640&h=400" alt="Notes to Action preview" loading="lazy">
+          <span class="work-cta">View project ↗</span>
+        </div>
+        <div class="work-info">
+          <div class="work-title">Notes → Action</div>
+          <div class="work-desc">Pattern-matching extraction engine today, with a clear upgrade path to a backend-proxied LLM call — API key never touches the client.</div>
+        </div>
+      </a>
+
+    </div>
+  </div>
+
+  <a class="back-link" href="index.html">
+    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 18l-6-6 6-6"/></svg>
+    Back
+  </a>
+
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
